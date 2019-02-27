@@ -38,7 +38,22 @@ public class Pet {
 	private Owner owner;
 	
 	
+	public String returnPetDetails() {
+		return name + " is a " + animal + " (Breed= " + breed + "). Purchased on " + purchaseDate + " by " + owner.getFname();
+	}
 	
+	
+	//constructor without id
+	public Pet(String name, String animal, String breed, LocalDate purchaseDate, Owner owner) {
+		super();
+		this.name = name;
+		this.animal = animal;
+		this.breed = breed;
+		this.purchaseDate = purchaseDate;
+		this.owner = owner;
+	}
+
+
 	//all fields constructor
 	public Pet(int id, String name, String animal, String breed, LocalDate purchaseDate, Owner ownerID) {
 		super();

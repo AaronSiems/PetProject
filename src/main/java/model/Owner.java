@@ -29,8 +29,20 @@ public class Owner {
 	private String state;
 	
 	
+	public String returnOwnerDetails() {
+		return "Name: " + fname + " " + lname + " Location: " + city + ", " + state;
+	}
 	
 	
+	//constructor without id
+	public Owner(String fname, String lname, String city, String state) {
+		super();
+		this.fname = fname;
+		this.lname = lname;
+		this.city = city;
+		this.state = state;
+	}
+
 	//all fields constructor
 	public Owner(int id, String fname, String lname, String city, String state) {
 		super();
