@@ -43,6 +43,16 @@ public class Pet {
 	}
 	
 	
+	
+	//constructor without id or owner
+		public Pet(String name, String animal, String breed, LocalDate purchaseDate) {
+			super();
+			this.name = name;
+			this.animal = animal;
+			this.breed = breed;
+			this.purchaseDate = purchaseDate;
+		}
+	
 	//constructor without id
 	public Pet(String name, String animal, String breed, LocalDate purchaseDate, Owner owner) {
 		super();
