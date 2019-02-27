@@ -1,11 +1,15 @@
 package model;
 
 import java.time.LocalDate;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -29,20 +33,21 @@ public class Pet {
 	@Column(name="purchaseDate")
 	private LocalDate purchaseDate;
 	
-	@Column(name="owner_id")
-	private int ownerID;
+	@ManyToOne(cascade=CascadeType.PERSIST)
+	@JoinColumn(name="owner_id")
+	private Owner owner;
 	
 	
 	
 	//all fields constructor
-	public Pet(int id, String name, String animal, String breed, LocalDate purchaseDate, int ownerID) {
+	public Pet(int id, String name, String animal, String breed, LocalDate purchaseDate, Owner ownerID) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.animal = animal;
 		this.breed = breed;
 		this.purchaseDate = purchaseDate;
-		this.ownerID = ownerID;
+		this.owner = ownerID;
 	}
 
 	
@@ -94,12 +99,12 @@ public class Pet {
 		this.purchaseDate = purchaseDate;
 	}
 
-	public int getOwnerID() {
-		return ownerID;
+	public Owner getOwner() {
+		return owner;
 	}
 
-	public void setOwnerID(int ownerID) {
-		this.ownerID = ownerID;
+	public void setOwner(Owner ownerID) {
+		this.owner = ownerID;
 	}
 	
 	
