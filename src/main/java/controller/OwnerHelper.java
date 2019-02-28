@@ -11,7 +11,7 @@ import javax.persistence.TypedQuery;
 import model.Owner;
 
 public class OwnerHelper {
-	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("PetProject");
+	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("petProject");
 	
 	public void insertOwner(Owner o) {
 		EntityManager em = emfactory.createEntityManager();
