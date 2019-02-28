@@ -61,7 +61,6 @@ public class addPetServlet extends HttpServlet {
 		String animal = request.getParameter("animal");
 		String breed = request.getParameter("breed");
 		int owner_id = Integer.parseInt(request.getParameter("owner"));
-		Owner owner = o.searchForOwnerById(owner_id);
 		LocalDate purchaseDate;
 		try {
 			purchaseDate = LocalDate.of(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
@@ -69,7 +68,7 @@ public class addPetServlet extends HttpServlet {
 			purchaseDate = LocalDate.now();
 		}
 		
-		Pet petToAdd = new Pet(name, animal, breed, purchaseDate, owner);
+		Pet petToAdd = new Pet(name, animal, breed, purchaseDate, o.searchForOwnerById(owner_id));
 		PetHelper dao = new PetHelper();
 		dao.addPet(petToAdd);
 		

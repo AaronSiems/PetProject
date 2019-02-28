@@ -6,17 +6,18 @@
 <title>Pets homepage</title>
 </head>
 <body>
-<form action = "addPetServlet" method="post">
-	Animal: <input type = "text" name = "animal">
-	Breed: <input type = "text" name = "breed">
-	Name: <input type = "text" name = "name">
-	Purchase date: <input type="text" name="month" placeholder="mm" size="4">, 
-	<input type="text" name="day" placeholder="dd" size="4">, 
-	<input type="text" name="year" placeholder="yyyy" size="4"><br/>
-	<input type = "submit" value = "Add Pet">
-	</form><br />
-
-
+<h2>Add Pet</h2>
 <a href = "viewAllPetsServlet">View all the pets</a><br/>
+<a href = "addPetServlet">Add a pet</a><br/>
+<a href = "editPetServlet">Edit a pet</a><br/>
+
+	
+<h2>Owner Menu</h2>
+<a href = "viewAllOwnersServlet">View all the owners</a><br/>
+<a href = "add-owner.jsp">Add an Owner</a><br/>
+<a href = "editOwnerServlet">Edit an Owner</a><br/>
+<a href = "deleteOwnerServlet">Delete an Owner</a><br/>
+
+
 </body>
 </html>
