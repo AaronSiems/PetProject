@@ -25,6 +25,6 @@
 	<input type = "submit" value = "delete" name = "doThisToItem">
 	<input type = "submit" value = "add" name = "doThisToItem">
 	</form>
-<a href="index.html">Add a new pet</a>
+<a href="addPetServlet">Add a new pet</a>
 </body>
 </html>
