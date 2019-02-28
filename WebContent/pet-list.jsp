@@ -23,8 +23,8 @@
 	</table>
 	<input type = "submit" value = "edit" name = "doThisToItem">
 	<input type = "submit" value = "delete" name = "doThisToItem">
-	<input type = "submit" value = "add" name = "doThisToItem">
 	</form>
-<a href="addPetServlet">Add a new pet</a>
+<a href="addPetServlet">Add a new pet</a><br/>
+<a href = "index.html">Return home</a><br/>
 </body>
 </html>

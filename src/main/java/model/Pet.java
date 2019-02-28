@@ -42,7 +42,9 @@ public class Pet {
 		return name + " is a " + animal + " (Breed= " + breed + "). Purchased on " + purchaseDate + " by " + owner.getFname();
 	}
 	
-	
+	public void setNullOwner() {
+		this.owner = null;
+	}
 	
 	//constructor without id or owner
 		public Pet(String name, String animal, String breed, LocalDate purchaseDate) {

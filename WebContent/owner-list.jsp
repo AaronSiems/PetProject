@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form method = "post" action = "viewAllOwnersServlet">
+<form method = "post" action = "ownerNavServlet">
 
 	<table>
 	<c:forEach items="${requestScope.allItems}" var="currentowner">
@@ -21,8 +21,8 @@
 	</tr>
 	</c:forEach>
 	</table>
-	<input type = "submit" value = "edit">
+	<input type = "submit" value = "edit" name = "doThisToItem">
 	</form>
-<a href="addOwnerServlet">Add a new pet</a>
+<a href="addOwnerServlet">Add a new owner</a>
 </body>
 </html>

@@ -10,7 +10,7 @@
 <body>
 <form action = "editOwnerServlet" method="post">
 		Firstname: <input type = "text" name = "fname" value = "${ownerToEdit.fname}">
-		Lastname: <input type = "text" name = "lanme" value = "${ownerToEdit.lname}">
+		Lastname: <input type = "text" name = "lname" value = "${ownerToEdit.lname}">
 		City: <input type = "text" name = "city" value = "${ownerToEdit.city}">
 		State: <input type="text" name="state" size="2" value="${ownerToEdit.state}">, 
 		

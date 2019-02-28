@@ -46,12 +46,9 @@ public class viewAllOwnersServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		OwnerHelper o = new OwnerHelper();
+				doGet(request, response);
 		
-		Integer tempId = Integer.parseInt(request.getParameter("id"));
-		Owner ownerToEdit = o.searchForOwnerById(tempId);
-		request.setAttribute("petToEdit", ownerToEdit);
-		getServletContext().getRequestDispatcher("/edit-owner.jsp").forward(request, response);
+		
 	}
 
 }

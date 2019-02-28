@@ -15,7 +15,6 @@
 		Purchase date: <input type="text" name="month" placeholder="mm" size="4" value="${petToEdit.purchaseDate.getMonthValue()}">, 
 		<input type="text" name="day" placeholder="dd" size="4" value="${petToEdit.purchaseDate.getDayOfMonth()}">, 
 		<input type="text" name="year" placeholder="yyyy" size="4" value="${petToEdit.purchaseDate.getYear()}"><br/>
-		
 		<input type = "hidden" name = "id" value = "${petToEdit.id}">
 		<input type = "submit" value = "Save Edited Pet">		
 	</form>

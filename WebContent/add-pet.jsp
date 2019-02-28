@@ -22,6 +22,7 @@
 	</select>
 	<input type = "submit" value = "Add Pet">
 	</form><br />
-
+	<a href = "viewAllPetsServlet">View all the pets</a><br/>
+	<a href = "index.html">Return to home</a><br/>
 </body>
 </html>
