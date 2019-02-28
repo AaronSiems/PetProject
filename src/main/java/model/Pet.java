@@ -33,7 +33,7 @@ public class Pet {
 	@Column(name="purchaseDate")
 	private LocalDate purchaseDate;
 	
-	@ManyToOne(cascade=CascadeType.PERSIST)
+	@ManyToOne(cascade=CascadeType.REFRESH)
 	@JoinColumn(name="owner_id")
 	private Owner owner;
 	
